@@ -1,0 +1,26 @@
+---
+title: "cos_between_vectors"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{cos_between_vectors}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(trigonometrics)
+```
+
+This is how cos_between_vectors works:
+
+```{r}
+cos_between_vectors(c(1, 1, 2), c(2, 3, 1))
+cos_between_vectors(c(1, 2, 2), c(0, 0, 1))
+```

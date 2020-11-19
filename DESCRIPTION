@@ -1,16 +1,19 @@
 Package: trigonometrics
-Title: What the Package Does (One Line, Title Case)
+Title: Operate with vectors and trignometric functions 
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Giorgio",
+           family = "Sgarbi",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "giorgio.sgarbi@stat.ubc.ca")
+Description: Operate with vectors, calculate relationships between them. Operate with angles and trignometric functions. Basic linear algebra operations along with vectorial algebra.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

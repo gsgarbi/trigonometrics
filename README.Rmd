@@ -1,0 +1,115 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# steps
+
+# trigonometrics
+load devtools
+library(devtools)
+
+create_package("/Users/giorgiosgarbi/Courses/stat545/trigonometrics")
+
+In new window:
+library(devtools)
+
+use_git()
+
+Rstudio restarts
+library(devtools)
+
+use_r("cos_between_vectors")
+
+write down the function
+
+load_all()
+
+check()
+
+edit description
+
+use_mit_license("Giorgio Sgarbi")
+
+click "check"
+
+library(roxygen2)
+
+Code -> Insert Roxygen2 Skelenton
+
+document()
+
+click "install and restart"
+
+library(devtools)
+
+use_testthat()
+
+use_test("cos_between_vectors")
+
+write down tests
+
+test()
+
+use_readme_rmd()
+
+write down read me
+
+build_readme()
+
+use_vignette("cos_between_vectors")
+
+write down vignette
+
+build_vignettes()
+
+
+# trigonometrics
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of trigonometrics is to provide the "cos_between_vectors" function and associated functions.
+
+## Installation
+
+You can install the released version of trigonometrics from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+devtools::install_github("gsgarbi/trigonometrics")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(trigonometrics)
+cos_between_vectors(c(1, 1, 0), c(4, 4, 0))
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
