@@ -75,6 +75,17 @@ You can install the released version of trigonometrics from
 
 ``` r
 devtools::install_github("gsgarbi/trigonometrics")
+#> Downloading GitHub repo gsgarbi/trigonometrics@HEAD
+#>      checking for file ‘/private/var/folders/dp/2syyc1_s78j9mrl94tby0r_w0000gn/T/RtmpzWgFqV/remotes8e9325428b85/gsgarbi-trigonometrics-15db29c/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/dp/2syyc1_s78j9mrl94tby0r_w0000gn/T/RtmpzWgFqV/remotes8e9325428b85/gsgarbi-trigonometrics-15db29c/DESCRIPTION’
+#>   ─  preparing ‘trigonometrics’:
+#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘trigonometrics_0.0.0.9000.tar.gz’
+#>      
+#> 
+#> Installing package into '/private/var/folders/dp/2syyc1_s78j9mrl94tby0r_w0000gn/T/RtmpligX5Q/temp_libpath8a167b86c35e'
+#> (as 'lib' is unspecified)
 ```
 
 ## Example
@@ -90,27 +101,3 @@ cos_between_vectors(c(1, 1, 0), c(4, 4, 0))
 #> [1] "The cosine between the vectors is 1"
 #> [1] 1
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
